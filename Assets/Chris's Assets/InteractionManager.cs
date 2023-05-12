@@ -20,7 +20,7 @@ public class InteractionManager : MonoBehaviour
     public bool setUpCompleted = false;
     public GameObject canvasObj;
     //names of items
-    string tripodName= "TripodStand", beaker1Name= "Beaker",beaker2Name= "Beaker (1)", boilingTubeName= "BoilingTube", thermometerName= "Thermometer";
+    string tripodName= "TripodStand", beaker1Name= "Beaker", boilingTubeName= "BoilingTube", thermometerName= "Thermometer";
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +39,7 @@ public class InteractionManager : MonoBehaviour
         thermometer =socketOnBoilingTube.GetOldestInteractableSelected();
         
         
-        if (tripod.transform.name== tripodName&& (beaker.transform.name==beaker1Name||beaker.transform.name==beaker2Name)&&boilingTube.transform.name==boilingTubeName&&thermometer.transform.name==thermometerName)
+        if (tripod.transform.name== tripodName&& (beaker.transform.name==beaker1Name)&&boilingTube.transform.name==boilingTubeName&&thermometer.transform.name==thermometerName)
         {
             //the shit is done
             setUpCompleted = true;

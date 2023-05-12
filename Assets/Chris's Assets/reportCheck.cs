@@ -41,7 +41,7 @@ public class reportCheck : MonoBehaviour
             saved= false;
             intervalNum++;
             yield return new WaitForSeconds(10f);
-            Debug.Log(meltResult[intervalNum-1]);
+            
             saved = true;
 
         }
@@ -54,7 +54,7 @@ public class reportCheck : MonoBehaviour
             saved = false;
             intervalNum++;
             yield return new WaitForSeconds(10f);
-            Debug.Log(freezeResult[intervalNum - 1]);
+            
             saved = true;
 
         }
