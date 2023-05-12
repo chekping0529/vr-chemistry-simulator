@@ -7,7 +7,7 @@ public class raycastDetect : MonoBehaviour
 {
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
-    const string tripodName = "TripodStand", beaker1Name = "Beaker", boilingTubeName = "BoilingTube", thermometerName = "Thermometer", burnerName = "Bunsen Burner";
+    const string tripodName = "TripodStand", beaker1Name = "Beaker", boilingTubeName = "BoilingTube", thermometerName = "Thermometer", burnerName = "Bunsen Burner",crucibleName="Crucible",weightname= "Weighing scale";
 
     // Start is called before the first frame update
     void Start()
@@ -65,6 +65,16 @@ public class raycastDetect : MonoBehaviour
                                         " to generate heat for distillation, melting, or boiling of substances, and for flame tests to identify the presence " +
                                         "of certain elements in a sample.";
                     break;
+                case crucibleName:
+                    description.text = "a crucible is a small, cup-shaped container made of ceramic, metal, or glass that is used for heating, melting, and " +
+                                        "analyzing materials. Crucibles are designed to withstand high temperatures and to resist chemical attack from the " +
+                                        "substances being heated or melted.";
+                    break;
+                case weightname:
+                    description.text =  "a weighing scale is an instrument used to measure the mass or weight of a substance or object. Weighing scales are " +
+                                        "important tools in many laboratory applications, as accurate measurement of mass is often critical to the success of an experiment.";
+                    break;
+
                 default:
                     break;
 
