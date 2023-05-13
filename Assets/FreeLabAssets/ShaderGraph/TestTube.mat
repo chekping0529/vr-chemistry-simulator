@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TestTube
-  m_Shader: {fileID: -6465566751694194690, guid: 9376ad9ee8aa1dc438f245d7156ab96e,
+  m_Shader: {fileID: -6465566751694194690, guid: f29b9fc0c43858d4b9ff8741613fe0c2,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,7 +35,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0
+    - _Fill: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WobbleX: 0

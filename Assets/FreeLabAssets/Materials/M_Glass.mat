@@ -26,8 +26,7 @@ Material:
   - _ALPHAPREMULTIPLY_ON
   - _METALLICSPECGLOSSMAP
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords:
-  - _METALLICGLOSSMAP
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -116,6 +115,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 1
+    - _BlendOp: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -127,6 +127,7 @@ Material:
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
     - _Glossiness: 1
+    - _GlossinessSource: 0
     - _GlossyReflections: 1
     - _Height: 1
     - _Metallic: 0
@@ -136,8 +137,12 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RotationSpeed: 1
+    - _SampleGI: 0
+    - _Shininess: 0
     - _Smoothness: 1
+    - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
+    - _SpecSource: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 1
@@ -151,8 +156,8 @@ Material:
     - _YScrollSpeed3: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.62745106, g: 0.9254902, b: 1, a: 0.078431375}
-    - _Color: {r: 0.62745106, g: 0.9254902, b: 1, a: 0.078431375}
+    - _BaseColor: {r: 0.35948732, g: 0.58510494, b: 0.6415094, a: 0.078431375}
+    - _Color: {r: 0.3594873, g: 0.58510494, b: 0.6415094, a: 0.078431375}
     - _Color1: {r: 1, g: 1, b: 1, a: 1}
     - _Color2: {r: 1, g: 1, b: 1, a: 1}
     - _Color3: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7e68351a035511a49bb426060f49de3e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Darumadrop One
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a8535b106cc701344a1372650c040373, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
