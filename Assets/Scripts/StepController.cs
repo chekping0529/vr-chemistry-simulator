@@ -8,20 +8,12 @@ using UnityEngine.UI;
 public class StepController : MonoBehaviour
 {
     public TextMeshProUGUI stepText;
-    public Image stepImage;
-    public Sprite[] images;
     public bool step1Completed;
-    public bool step2Completed;
-    public bool step3Completed;
-    public bool step4Completed;
-    public GameObject sodium;
-    private ParticleSystem particle;
-    public string sceneName ="Level Tut";
+    public GameObject contin;
+
+    public string sceneName ="Level4";
     void Start()
     {
-        particle = sodium.GetComponent<ParticleSystem>();
-        particle.Pause();
-
         // Initialize the UI with the first step
         UpdateUI();
     }
@@ -29,8 +21,6 @@ public class StepController : MonoBehaviour
     public void CompleteStep1()
     {
         CompleteStep(1);
-        Debug.Log("checked");
-        particle.Play();
     }
 
 
@@ -43,15 +33,7 @@ public class StepController : MonoBehaviour
             case 1:
                 step1Completed = true;
                 break;
-            case 2:
-                step2Completed = true;
-                break;
-            case 3:
-                step3Completed = true;
-                break;
-            case 4:
-                step4Completed = true;
-                break;
+           
         }
 
         // Update the UI based on the current step
@@ -61,30 +43,17 @@ public class StepController : MonoBehaviour
     // Update the UI with the current step
     private void UpdateUI()
     {
+        
         if (!step1Completed)
         {
-            stepText.text = "Step 1: ...";
+            stepText.text = "Step 1: put the metal ball in one by one and record the result. After that is done, the task is completed";
             //stepImage.sprite = images[0];
         }
-        else if (!step2Completed)
+       
+        else 
         {
-            stepText.text = "Step 2: ...";
-            //stepImage.sprite = images[1];
-        }
-        else if (!step3Completed)
-        {
-            stepText.text = "Step 3: ...";
-            //stepImage.sprite = images[2];
-        }
-        else if (!step4Completed)
-        {
-            stepText.text = "Step 4: ...";
-            //stepImage.sprite = images[3];
-        }
-        else
-        {
-            // All steps completed, show a message or perform some other action
-            Debug.Log("All steps completed!");
+            stepText.text = "Congratulations!! You have completed the experiment";
+            contin.SetActive(true);
         }
     }
   

@@ -16,6 +16,9 @@ public class InteractionManager : MonoBehaviour
     IXRSelectInteractable beaker;
     IXRSelectInteractable boilingTube;
     IXRSelectInteractable thermometer;
+    public Animation animationComponent; // Reference to the Animation component
+    public string animationName = "ResultAni"; // Name of the animation clip
+
 
     public bool setUpCompleted = false;
     public GameObject canvasObj;
@@ -24,6 +27,7 @@ public class InteractionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animationComponent = GetComponent<Animation>();
         //socketOnBunsen = GetComponent<XRSocketInteractor>();
         //socketOnTripod = GetComponent<XRSocketInteractor>();
         //socketOnRetord = GetComponent<XRSocketInteractor>();
@@ -44,6 +48,8 @@ public class InteractionManager : MonoBehaviour
             //the shit is done
             setUpCompleted = true;
             canvasObj.SetActive(true);
+            animationComponent.Play(animationName);
+
         }
 
     }

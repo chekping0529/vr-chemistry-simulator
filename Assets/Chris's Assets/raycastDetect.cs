@@ -7,7 +7,7 @@ public class raycastDetect : MonoBehaviour
 {
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
-    const string tripodName = "TripodStand", beaker1Name = "Beaker", boilingTubeName = "BoilingTube", thermometerName = "Thermometer", burnerName = "Bunsen Burner",crucibleName="Crucible",weightname= "Weighing scale";
+    const string tripodName = "TripodStand", beaker1Name = "Beaker", boilingTubeName = "BoilingTube", thermometerName = "Thermometer", burnerName = "Bunsen Burner",crucibleName="Crucible",weightname= "Weighing scale", sodium="Sodium", lithium ="Lithium", potassium="Potassium", cesium="Cesium";
 
     // Start is called before the first frame update
     void Start()
@@ -73,7 +73,31 @@ public class raycastDetect : MonoBehaviour
                 case weightname:
                     description.text =  "a weighing scale is an instrument used to measure the mass or weight of a substance or object. Weighing scales are " +
                                         "important tools in many laboratory applications, as accurate measurement of mass is often critical to the success of an experiment.";
+                    
+
                     break;
+                case sodium:
+                    description.text = "Sodium is a chemical element with the symbol Na (from Latin natrium) and atomic number 11. It is a soft, " +
+                                       "silvery-white, highly reactive metal. Sodium is an alkali metal, being in group 1 of the periodic table. ";
+
+                    break;
+                case lithium:
+                    description.text = "Lithium (from Ancient Greek ????? (líthos) 'stone') is a chemical element with the symbol Li and atomic number 3. It is a soft, silvery-white alkali metal. " +
+                                       "Under standard conditions, it is the least dense metal and the least dense solid element. ";
+
+                    break;
+                case potassium:
+                    description.text = "Potassium is the chemical element with the symbol K (from Neo-Latin kalium) and atomic number 19. It is a silvery white metal that is soft enough to easily cut with a knife." +
+                                       "Potassium metal reacts rapidly with atmospheric oxygen to form flaky white potassium peroxide in only seconds of exposure. ";
+
+                    break;
+                case cesium:
+                    description.text = "cesium (Cs), also spelled caesium, chemical element of Group 1 (also called Group Ia) of the periodic table, the alkali metal group, and the first element to be discovered spectroscopically (1860), " +
+                                       "by German scientists Robert Bunsen and Gustav Kirchhoff, who named it for the unique blue lines of its spectrum (Latin caesius, “sky-blue”).";
+
+
+                    break;
+
 
                 default:
                     break;

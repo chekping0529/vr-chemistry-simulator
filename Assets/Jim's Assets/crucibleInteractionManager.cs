@@ -8,7 +8,8 @@ public class crucibleInteractionManager : MonoBehaviour
 {
     public XRSocketInteractor socketOnBunsen;
     public XRSocketInteractor socketOnTripod;
-    
+    public Animation animationComponent; // Reference to the Animation component
+    public string animationName = "ResultLevel1"; // Name of the animation clip
 
     //used to check if the object is same with id
     IXRSelectInteractable tripod;
@@ -22,7 +23,7 @@ public class crucibleInteractionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animationComponent = GetComponent<Animation>();
         //socketOnBunsen = GetComponent<XRSocketInteractor>();
         //socketOnTripod = GetComponent<XRSocketInteractor>();
         //socketOnRetord = GetComponent<XRSocketInteractor>();
@@ -42,6 +43,7 @@ public class crucibleInteractionManager : MonoBehaviour
             //the shit is done
             setUpCompleted = true;
             canvasObj.SetActive(true);
+            animationComponent.Play(animationName);
         }
         else
         {
